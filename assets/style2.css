@@ -37,15 +37,55 @@ body{
 .content1-1{
     display: flex;
     align-items: flex-start;
+    padding-bottom: 10px;
 }
 .content1-2{
     margin-left: 10px;
 }
-h2{
+h3{
     margin-top: 0;
     margin-bottom: 2px;
 }
-h3{
+h4{
     margin-top: 2px;
     margin-bottom: 2px;
+    font-weight: normal;
+}
+.content1{
+    padding-bottom: 5px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(207, 207, 207);
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 290px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.space{
+    height: 25px;
+}
+.di4{
+    border-top: solid 1px rgb(207, 207, 207);
+    margin-top: 50px;
+    padding: 15px;
+}
+h5{
+    font-weight: normal;
+}
+select{
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+}
+.spoton{
+    background-color: rgba(23, 24, 27, 0.817);
+    color: white;
+    padding: 2px;
 }

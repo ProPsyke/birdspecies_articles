@@ -56,6 +56,24 @@ body{
     margin-top: 10px;
 }
 .di4{
-    margin-top: 10px;
+    border-top: 1px solid rgb(207, 207, 207);
+    margin-top: 50px;
     padding: 15px;
+}
+.g{
+    margin-top: 50px;
+}
+select{
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(23, 24, 27, 0.817);
+    padding: 2px;
+    color: white;
+}
+option{
+    background-color: white;
+    color: black;
 }
