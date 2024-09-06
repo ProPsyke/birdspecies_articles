@@ -1,0 +1,66 @@
+body{
+    margin-left: 50px;
+    width: 1170px;
+}
+.di1{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 40px;
+}
+.di1-1 a{
+    margin-right: 20px;
+}
+select{
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+}
+.spoton{
+    background-color: rgba(23, 24, 27, 0.817);
+    color: white;
+    padding: 2px;
+}
+.box{
+    display: flex;
+    width: 900px;
+    height: 500px;
+    box-shadow: 1px 1px 10px 5px rgb(224, 224, 224);
+    margin-left: 12%;
+    margin-top: 20px;
+}
+.box1{
+    text-align: center;
+    height: 480px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+input{
+    margin-bottom: 20px;
+    display: block;
+    height: 25px;
+    width: 210px;
+}
+.line{
+    display: flex;
+}
+img{
+    height: 500px;
+    width: 450px;
+}
+h2{
+    color: rgba(90, 88, 88, 0.534);
+    font-size: 70px;
+    position: absolute;
+    top: 35%;
+    left: 59%;
+}
