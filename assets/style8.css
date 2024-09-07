@@ -1,0 +1,67 @@
+body{
+    margin-left: 50px;
+    margin-top: 0;
+    width: 1170px;
+}
+.di1{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.155);
+}
+.di1-1 a{
+    margin-right: 20px;
+}
+.my{
+    left: 50px;
+    position: absolute;
+    top: 15%;
+    display: flex;
+}
+.my p{
+    font-size: 30px;
+    margin: 0;
+}
+.my div{
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 3%;
+}
+.img2{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.card{
+    margin-top: 5%;
+    margin-left: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(207, 207, 207);
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px;
+    width: 180px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.text{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid rgb(207, 207, 207);
+    left: 50px;
+    position: absolute;
+    width: 850px;
+    top: 350px;
+    height: 40vh;
+}
+.text p{
+    font-size: 15px;
+}
