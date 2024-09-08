@@ -1,19 +1,26 @@
 body{
-    margin-left: 50px;
+    width: 1150px;
     margin-top: 0;
-    width: 1170px;
+    margin-left: 0;
+    text-align: center;
 }
 .di1{
-    margin-bottom: 10px;
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1170px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.155);
 }
 .di1-1 a{
     margin-right: 20px;
+}
+.di2{
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .di2-1{
     position: absolute;
@@ -21,17 +28,25 @@ body{
 }
 .di2-2{
     padding-left: 5px;
+    padding-right: 5px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    left: 900px;
+    left: 870px;
     width: 250px;
     top: 100px;
+}
+.find{
+    background-color: white;
+    border: 1px solid rgb(79, 79, 79);
 }
 .in1{
     margin-left: 5px;
 }
 .content{
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 20px;
 }
 .seemore{
@@ -58,9 +73,11 @@ body{
     margin-top: 10px;
 }
 .di4{
+    width: 1150px;
+   margin-left: 50px;
+    margin-right: 50px;
     border-top: 1px solid rgb(207, 207, 207);
     margin-top: 50px;
-    padding: 15px;
 }
 .g{
     margin-top: 50px;
@@ -89,4 +106,8 @@ option{
     left: 1170px;
     background-color: rgb(67, 63, 63);
     color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
 }

@@ -1,16 +1,17 @@
 body{
-    margin-left: 50px;
     margin-top: 0;
-    width: 1170px;
+    margin-left: 0;
+    text-align: center;
 }
 .di1{
-    margin-bottom: 10px;
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1170px;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.155);
 }
 .di1-1 a{
     margin-right: 20px;
@@ -37,8 +38,9 @@ body{
     border: 1px solid black;
 }
 .card{
-    margin-top: 5%;
-    margin-left: 950px;
+    position: absolute;
+    top: 15%;
+    left: 975px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,7 +48,7 @@ body{
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 450px;
+    height: 83vh;
     width: 180px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
@@ -60,8 +62,16 @@ body{
     position: absolute;
     width: 850px;
     top: 350px;
-    height: 40vh;
+    height: 41vh;
 }
 .text p{
     font-size: 15px;
+}
+select{
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
 }

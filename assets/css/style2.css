@@ -1,17 +1,26 @@
 body{
-    margin-left: 50px;
-    width: 1170px;
-}
-.di1{
+    width: 1150px;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .di1{
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1170px;
     height: 40px;
-}
-.di1-1 a{
+  }
+  .di1-1 a{
     margin-right: 20px;
+  }
+  .di2{
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .di2-1{
     position: absolute;
@@ -19,10 +28,11 @@ body{
 }
 .di2-2{
     padding-left: 5px;
+    padding-right: 5px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    left: 900px;
+    left: 870px;
     width: 250px;
     top: 100px;
 }
@@ -30,11 +40,15 @@ body{
     margin-left: 5px;
 }
 .content{
-    margin-top: 20px;
-    display: flex;
     justify-content: space-between;
+    display: flex;
+    width: 1200px;
+    margin-top: 20px;
+    text-align: left;
 }
 .content1-1{
+    padding-left: 50px;
+    width: 600px;
     display: flex;
     align-items: flex-start;
     padding-bottom: 10px;
@@ -55,9 +69,6 @@ h4{
     padding-bottom: 5px;
 }
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     border: 1px solid rgb(207, 207, 207);
     padding-top: 15px;
     padding-left: 20px;
@@ -69,9 +80,11 @@ h4{
     height: 25px;
 }
 .di4{
-    border-top: solid 1px rgb(207, 207, 207);
+    width: 1150px;
+   margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid rgb(207, 207, 207);
     margin-top: 50px;
-    padding: 15px;
 }
 h5{
     font-weight: normal;

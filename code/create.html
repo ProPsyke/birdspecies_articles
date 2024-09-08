@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/birdspecies_articles/assets/style9.css" />
+    <title>Write an article</title>
+    <link rel="stylesheet" href="/assets/css/style9.css" />
   </head>
   <body>
     <div class="di1">
@@ -25,31 +25,50 @@
       </div>
       <div><h1>Bird Species</h1></div>
     </div>
-    <div>
-      <input type="text" />
-      <input type="text" />
-      <input input type="date" id="formdate" disabled />
-      <div>
-        <p>Pick a tag for the Article</p>
-        <select name="" id="">
-          <option value="Classic">Classic</option>
-          <option value="WellKnown">WellKnown</option>
-          <option value="Unique">Unique</option>
-          <option value="Predators">Predators</option>
-        </select>
+
+    <div class="di2">
+      <div class="adjust">
+        <p>Nhập thông tin bài viết</p>
+        <input type="text" />
+        <input type="text" />
+        <input input type="date" id="formdate" disabled />
+        <div>
+          <p>Pick a tag for the Article</p>
+          <select name="" id="">
+            <option value="Classic">Classic</option>
+            <option value="WellKnown">WellKnown</option>
+            <option value="Unique">Unique</option>
+            <option value="Predators">Predators</option>
+          </select>
+        </div>
+        <div>
+          <p>Article</p>
+          <textarea
+            class="textareaElement"
+            id="more"
+            contenteditable
+            placeholder="Write your Article here"
+            oninput="countWord()"
+          ></textarea>
+          <p>
+            Word Count:
+            <span id="show">0</span>
+          </p>
+        </div>
       </div>
-      <div>
-        <textarea
-          class="textareaElement"
-          id="more"
-          contenteditable
-          placeholder="Tạo bài viết"
-          oninput="countWord()"
-        ></textarea>
-        <p>
-          Word Count:
-          <span id="show">0</span>
+      <div class="Rules">
+        <p>Rule</p>
+        <p>1. You must write at least 150 words to submit us, there is the word count</p>
+        <p>2. You must not mention irrelevant information about birds in your article if it
+          doesn't serve the purpose of giving information about birds
         </p>
+        <p>3. We might not upload your work if we think the work isn't good enough</p>
+        <p>4. Your work must not contain offensive words or negatively aim to a group of people
+           for any purpose</p>
+        <p>5. You might be banned of writing for 1 month if we think you don't follow our rules
+          and banned permantly if you violate the same rule for 3 times
+        </p>
+        <p>6. We do not allow any community to gain profit on our site</p>
       </div>
     </div>
   </body>

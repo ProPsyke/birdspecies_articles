@@ -1,0 +1,62 @@
+body{
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+}
+.di1{
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+.di1-1 a{
+    margin-right: 20px;
+}
+.di2{
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1150px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.adjust{
+    display: flex;
+    flex-direction: column;
+}
+.adjust input{
+    width: 350px;
+    margin-bottom: 10px;
+}
+.adjust textarea{
+    width: 350px;
+    height: 250px;
+}
+.adjust select{
+    width: 350px;
+    margin-bottom: 10px;
+}
+.adjust p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.Rules{
+    width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    height: 400px;
+}
+select{
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+}

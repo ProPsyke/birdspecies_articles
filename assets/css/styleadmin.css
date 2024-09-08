@@ -1,0 +1,149 @@
+td{
+    border: solid 1px;
+    background-color: white;
+}
+th{
+    border: solid 1px black;
+    background-color: #70aeff;
+    color: #ffffff;
+}
+tr{
+    text-align: center;
+}
+.a{
+    text-align: center;
+}
+table{
+    margin-left: 10%;
+    width: 1000px;
+    background-color: #add1ff;
+}
+h1{
+    text-align: center;
+}
+#x{
+    border: 3px solid #d8e9ff;
+    display: none;
+    padding: 5px;
+    background-color: #add1ff;
+    position: fixed;
+    top: 45px;
+    left: 40px;
+    border-radius: 5px;
+}
+#x label{
+    background-color: aliceblue;
+    border-radius: 1px;
+}
+.div{
+    display: flex;
+    justify-content: flex-start;
+}
+#x button{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 175px;
+    margin-left: 2px;
+    height: 30px;
+}
+#x p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight:bold;
+}
+.input1{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    display: block;
+    width: 350px;
+    background-color: #ffffff;
+    border: none;
+    height: 20px;
+}
+#er{
+    display: none;
+    color: crimson;
+}
+#must{
+    display: none;
+    color: crimson;
+}
+textarea{
+    display: block;
+    margin-top: 2px;
+    width: 350px;
+    height: 250px;
+}
+.m{
+    text-align: center;
+    font-size: 20px;
+}
+#plus{
+    background-color: #70aeff;
+    top: 90%;
+    position: fixed;
+    border: solid 1px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+}
+h{
+    display: block;
+    color:#ffffff;
+    font-weight: bold;
+}
+#a{
+    background-color: #2382fd;
+    color: #ffffff;
+}
+#e{
+    background-color: #70aeff;
+    color: #ffffff;
+}
+select{
+    width: 212px;
+    height: 20px;
+}
+.pick{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#update{
+    border: 4px solid #9cc7fe;
+    position: fixed;
+    top: 10px;
+    left: 450px;
+    background-color: #d8e9ff;
+    padding: 15px;
+
+}
+#update input{
+    width: 350px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    background-color: white;
+    border: none;
+}
+#update h4{
+    background-color: aliceblue;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight:bold;
+}
+#update button{
+    margin-top: 5px;
+    height: 30px;
+    width: 175px;
+}
+#update h2{
+    background-color: #ffffff;
+    color: #2382fd;
+    text-align: center;
+}
+#update textarea{
+    margin-top: 5px;
+}
