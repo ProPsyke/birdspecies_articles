@@ -12,25 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="/assets/js/script4.js"></script>
   </head>
   <body>
     <div class="box">
       <div class="box1">
-        <button class="exit"><i class="fa-solid fa-xmark"></i></button>
-        <input type="text" placeholder="Username" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <div>
-          <a href="">register now</a>
-          <button>Log In</button>
-        </div>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Username"
+            class="input"
+            pattern="{1-15}"
+            title="15 characters maximize"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            minlength="8"
+            maxlength="20"
+            required
+            id="pass"
+          />
+          <div class="show">
+            <input type="checkbox" onclick="showpass()" />show password
+          </div>
+          <div>
+            <input type="submit" value="Log In" class="sub sub1" />
+          </div>
+        </form>
+        <button class="sub sub2" onclick="navigate()">Sign Up now</button>
+        <button class="exit" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div>
         <h2>Login</h2>
-        <img
-          src="/assets/img/pexels-hngstrm-1939485.jpg"
-          alt=""
-        />
+        <img src="/assets/img/pexels-hngstrm-1939485.jpg" alt="" />
       </div>
     </div>
   </body>

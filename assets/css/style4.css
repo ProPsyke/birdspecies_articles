@@ -45,12 +45,12 @@ select{
     justify-content: center;
 
 }
-input{
+.input {
     margin-bottom: 20px;
     display: block;
     height: 25px;
     width: 210px;
-}
+  }
 .line{
     display: flex;
 }
@@ -63,8 +63,14 @@ h2{
     font-size: 70px;
     position: absolute;
     top: 30%;
-    left: 61.5%;
+    left: 60.5%;
 }
+#pass {
+    margin-bottom: 10px;
+    display: block;
+    height: 25px;
+    width: 210px;
+  }
 .exit{
     position: absolute;
     top: 40px;
@@ -75,3 +81,25 @@ h2{
     color: white;
     border: none;
 }
+.sub {
+    height: 40px;
+    width: 220px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .sub1 {
+    background-color: white;
+    border: solid 2px rgba(26, 26, 26, 0.598);
+  }
+  .sub2 {
+      background-color: rgba(0, 0, 0, 0.733);
+      color: white;
+  }
+  .show {
+    margin-bottom: 20px;
+    margin-right: 100px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(50, 120, 225);
+  }

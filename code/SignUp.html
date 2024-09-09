@@ -12,25 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="/assets/js/script3.js"></script>
   </head>
   <body>
     <div class="box">
       <div class="box1">
-        <form action="/code/SignIn.html"></form>
-        <button class="exit"><i class="fa-solid fa-xmark"></i></button>
-        <input
-          type="text"
-          placeholder="Username"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-        />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <input type="date" />
-        <div>
-          <a href="">login now</a>
-          <button>Sign Up</button>
-        </div>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Username"
+            pattern="{1,15}"
+            title="15 characters maximize"
+            class="input"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="Please follow the email format"
+            class="input"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            minlength="8"
+            required
+            id="pass"
+          />
+          <div class="show"><input type="checkbox" onclick="showpass()" />show password</div>
+          <div>
+            <input onclick="submit()" type="submit" value="Sign Up" class="sub sub1"/>
+          </div>
+        </form>
+        <button class="sub sub2" onclick="navigate()">Login now</button>
+        <button class="exit" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div>
         <h2>Sign Up</h2>
