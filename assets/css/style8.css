@@ -63,6 +63,7 @@ body{
     width: 850px;
     top: 350px;
     height: 41vh;
+    text-align: justify;
 }
 .text p{
     font-size: 15px;
