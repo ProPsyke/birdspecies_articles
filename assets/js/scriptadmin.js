@@ -51,7 +51,6 @@ const handleDelete = async(id) =>{
 function exit(){
   document.getElementById('name').value= ''
   document.getElementById('description').value= ''
-  document.getElementById('more').value= ''
   document.getElementById('x').style.display = 'none'
   document.getElementById('er').style.display='none'
   document.getElementById('must').style.display='none'
@@ -59,14 +58,22 @@ function exit(){
 }
 
 //create work
-function old(){
-    fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', {
+function create(){
+    document.getElementById('must').style.display='none'
+    const newTask1 ={
+      fullName : document.getElementById('name').value,
+      dateOfBirth : document.getElementById('formdate').value,
+      checkPermission : document.getElementById('tags').value,
+      email : document.getElementById('description').value
+    }
+    console.log(newTask1)
+    fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/users', {
       method: 'POST',
       headers: {'content-type':'application/json'},
-      body: JSON.stringify(newTask)
+      body: JSON.stringify(newTask1)
     }).then(res => {
       if (res.ok) {
-          return res.json(location.reload());  
+        return res.json(location.reload());  
       }
       // handle error
     }).then(task => {
@@ -74,5 +81,22 @@ function old(){
     }).catch(error => {
       // handle error
       console.log(error)
-    })
-  }
+    })}
+
+    var date = new Date();
+    var day = date.getDate(),
+    month = date.getMonth() + 1,
+    year = date.getFullYear(),
+    hour = date.getHours(),
+    min  = date.getMinutes();
+    month = (month < 10 ? "0" : "") + month;
+    day = (day < 10 ? "0" : "") + day;
+    hour = (hour < 10 ? "0" : "") + hour;
+    min = (min < 10 ? "0" : "") + min;
+    var today = year + "-" + month + "-" + day,
+    displayTime = hour + ":" + min; 
+    console.log(today)
+
+    function backhome(){
+      window.location=('http://127.0.0.1:5500/index.html')
+    }

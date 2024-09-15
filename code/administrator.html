@@ -15,6 +15,7 @@
     <script src="/assets/js/scriptadmin.js"></script>
   </head>
   <body>
+    <button onclick="backhome()">ESCAPE</button>
     <button onclick="btn()" id="plus"><i class="fa-solid fa-plus"></i></button>
     <table style="border: solid 1px">
       <caption>
@@ -23,7 +24,7 @@
       <tr>
         <th>Id</th>
         <th>Full Name</th>
-        <th>Birthday</th>
+        <th>Create Day</th>
         <th>Permission</th>
         <th>Email</th>
         <th>Edit</th>
@@ -31,7 +32,7 @@
       <tbody class="h"></tbody>
     </table>
     <div id="x">
-      <h class="m">Nhập thông tin Người dùng</h>
+      <h class="m">Nhập thông tin người dùng</h>
       <label for="">Tên</label>
       <input
         type="text"
@@ -40,45 +41,37 @@
         placeholder="Điền tên người dùng"
         autocomplete="off"
       />
-      <label for="">Mô tả</label>
+      <label for="">Email</label>
       <input
         type="text"
         id="description"
         class="input1"
-        placeholder="Điền mô tả bài viết"
+        placeholder="Điền Email"
+        autocomplete="off"
+      />
+      <label for="">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="input1"
+        placeholder="Điền password"
         autocomplete="off"
       />
       <label for="">Ngày tạo</label>
       <input type="date" id="formdate" class="input1" disabled />
       <div class="pick">
-        <label for="">Chọn tag cho bài viết</label>
+        <label for="">Cấp người dùng</label>
         <select name="tags" id="tags">
-          <option value="thú vị">Thú vị</option>
-          <option value="nguy hiểm">Nguy hiểm</option>
-          <option value="Aww">Aww</option>
-          <option value="huyền thoại">Huyền thoại</option>
-          <option value="thường gặp">Thường gặp</option>
+          <option value="Thành viên bình thường">Người thường</option>
+          <option value="Tác gia">Tác Gia</option>
+          <option value="ADMIN">ADMIN</option>
         </select>
-      </div>
-      <div>
-        <label for="" class="no">Bài viết</label>
-        <textarea
-          class="textareaElement"
-          id="more"
-          contenteditable
-          placeholder="Tạo bài viết"
-          oninput="countWord()"
-        ></textarea>
       </div>
       <p id="er">*Bắt buộc phải có ít nhất 8 ký tự</p>
       <p id="must">*Bài viết phải có ít nhất 150 từ</p>
-      <p>
-        Word Count:
-        <span id="show">0</span>
-      </p>
       <div class="div">
         <button onclick="exit()" id="e">thoát</button>
-        <button onclick="old()" id="a">tạo</button>
+        <button onclick="create()" id="a">tạo</button>
       </div>
     </div>
   </body>

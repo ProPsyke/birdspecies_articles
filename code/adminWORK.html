@@ -15,6 +15,7 @@
     <script src="/assets/js/scriptadminWORK.js"></script>
   </head>
   <body>
+    <button onclick="backhome()">ESCAPE</button>
     <button onclick="btn()" id="plus"><i class="fa-solid fa-plus"></i></button>
     <table style="border: solid 1px">
       <caption>
@@ -25,7 +26,8 @@
         <th>Name of Article</th>
         <th>Created at</th>
         <th>Description</th>
-        <th>content</th>
+        <th>Content</th>
+        <th>Tag</th>
         <th>Edit</th>
       </tr>
       <tbody class="h"></tbody>
@@ -53,11 +55,10 @@
       <div class="pick">
         <label for="">Chọn tag cho bài viết</label>
         <select name="tags" id="tags">
-          <option value="thú vị">Thú vị</option>
-          <option value="nguy hiểm">Nguy hiểm</option>
-          <option value="Aww">Aww</option>
-          <option value="huyền thoại">Huyền thoại</option>
-          <option value="thường gặp">Thường gặp</option>
+          <option value="Classic">Classic</option>
+          <option value="Well Known">Well Known</option>
+          <option value="Unique">Unique</option>
+          <option value="Predators">Predators</option>
         </select>
       </div>
       <div>

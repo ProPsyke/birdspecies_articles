@@ -1,4 +1,4 @@
-fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đường dẫn
+fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article/', { //đường dẫn
     method: 'GET', //phương thức
     headers: {'content-type':'application/json'},
   }).then(res => {
@@ -16,6 +16,7 @@ fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đ
          <td>${(tasks[i].createDateAt)}</td>
          <td>${(tasks[i].des)}</td>
          <td>${(tasks[i].content)}</td>
+         <td>${(tasks[i].tag)}</td>
          <td>
           <span onclick="edit(${tasks[i].id})"><i class="fa-solid fa-pen-to-square"></i></span>
           <span onclick="handleDelete(${tasks[i].id})"><i class="fa-solid fa-trash"></i></span>
@@ -117,7 +118,8 @@ function old(){
       title : document.getElementById('name').value,
       createDateAt : document.getElementById('formdate').value,
       des : document.getElementById('description').value,
-      content : document.getElementById('more').value
+      content : document.getElementById('more').value,
+      tag : document.getElementById('tags').value,
     }
     fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', {
       method: 'POST',
@@ -137,5 +139,9 @@ function old(){
     
 
   }
+}
+
+function backhome(){
+  window.location=('http://127.0.0.1:5500/index.html')
 }
 
