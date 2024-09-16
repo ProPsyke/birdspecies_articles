@@ -17,47 +17,59 @@ body{
     margin-right: 20px;
 }
 .di2{
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
     width: 1150px;
-    margin-top: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2)
+}
+.d{
+    margin-top: 3px;
     display: flex;
     justify-content: space-between;
 }
+#formdate{
+    width: 515px;
+}
 .adjust{
+    width: 600px;
     display: flex;
     flex-direction: column;
 }
 .adjust input{
-    width: 350px;
     margin-bottom: 10px;
 }
 .adjust textarea{
-    width: 350px;
+    width: 600px;
     height: 250px;
 }
 .adjust select{
-    width: 350px;
     margin-bottom: 10px;
+    width: 430px;
+    border: 1px solid black;
 }
 .adjust p{
     margin-top: 0;
     margin-bottom: 0;
 }
 .Rules{
-    width: 650px;
+    background-color: rgb(239, 239, 239);
+    width: 450px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid black;
-    height: 400px;
+    border-left: 2px solid rgb(164, 164, 164);
+    height: 450px;
 }
 select{
     font-size: 16px;
     appearance: none;
-    border: none;
     margin-right: 10px;
     font-family: 'Times New Roman', Times, serif;
     padding: 2px;
+    border: none;
 }
