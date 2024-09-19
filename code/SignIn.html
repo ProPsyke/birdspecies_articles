@@ -12,18 +12,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/assets/js/script4.js"></script>
   </head>
   <body>
     <div class="box">
       <div class="box1">
-        <form action="">
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Username or Email"
             class="input"
             pattern="{1-15}"
             title="15 characters maximize"
+            id="nam"
             required
           />
           <input
@@ -39,9 +38,8 @@
             <input type="checkbox" onclick="showpass()" />show password
           </div>
           <div>
-            <input type="submit" value="Log In" class="sub sub1" />
+            <input type="submit" value="Log In" class="sub sub1" onclick="hard()"/>
           </div>
-        </form>
         <button class="sub sub2" onclick="navigate()">Sign Up now</button>
         <button class="exit" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
       </div>
@@ -50,5 +48,6 @@
         <img src="/assets/img/pexels-hngstrm-1939485.jpg" alt="" />
       </div>
     </div>
+    <script src="/assets/js/script4.js"></script>
   </body>
 </html>

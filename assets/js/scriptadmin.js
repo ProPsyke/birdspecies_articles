@@ -64,7 +64,8 @@ function create(){
       fullName : document.getElementById('name').value,
       dateOfBirth : document.getElementById('formdate').value,
       checkPermission : document.getElementById('tags').value,
-      email : document.getElementById('description').value
+      email : document.getElementById('description').value,
+      password : document.getElementById('password').value
     }
     console.log(newTask1)
     fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/users', {
@@ -99,4 +100,7 @@ function create(){
 
     function backhome(){
       window.location=('http://127.0.0.1:5500/index.html')
+    }
+    function workpage(){
+      window.location.href='http://127.0.0.1:5500/code/adminWORK.html'
     }

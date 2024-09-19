@@ -12,18 +12,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/assets/js/script3.js"></script>
+    
   </head>
   <body>
     <div class="box">
       <div class="box1">
-        <form action="">
+        <div>
           <input
             type="text"
             placeholder="Username"
             pattern="{1,15}"
             title="15 characters maximize"
             class="input"
+            id="name"
             required
           />
           <input
@@ -32,6 +33,7 @@
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
             title="Please follow the email format"
             class="input"
+            id="email"
             required
           />
           <input
@@ -43,10 +45,10 @@
           />
           <div class="show"><input type="checkbox" onclick="showpass()" />show password</div>
           <div>
-            <input onclick="submit()" type="submit" value="Sign Up" class="sub sub1"/>
+            <button onclick="submit()" class="sub sub1" type="button">Sign Up</button>
           </div>
-        </form>
-        <button class="sub sub2" onclick="navigate()">Login now</button>
+        </div>
+        <button class="sub sub2" onclick="navigate()" >Login now</button>
         <button class="exit" onclick="exit()"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div>
@@ -54,5 +56,7 @@
         <img src="/assets/img/pexels-hngstrm-1939485.jpg" alt="" />
       </div>
     </div>
+    <div id="err"></div>
+    <script src="/assets/js/script3.js"></script>
   </body>
 </html>

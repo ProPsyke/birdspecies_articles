@@ -102,3 +102,9 @@ a {
   text-decoration: none;
   color: rgb(50, 120, 225);
 }
+#err{
+  position: absolute;
+  display: none;
+  left: 500px;
+  color: red;
+}

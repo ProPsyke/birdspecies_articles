@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <button onclick="window.location.href='add.html'">Thêm tài khoản</button>
+    <div class="table_component" role="region" tabindex="0">
+        <table>
+            <caption>Quản lý user</caption>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>FULLNAME</th>
+                    <th>AGE</th>
+                    <th>ROLE</th>
+                    <th>USERNAME</th>
+                    <th>THAO TÁC</th>
+                </tr>
+            </thead>
+            <tbody class="tbody_user">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script >const urlUsers = "https://66a5bacc23b29e17a1a0c825.mockapi.io/api/users";
+
+        const tbody_user = document.querySelector(".tbody_user");
+        
+        async function getAllUsers(url) {
+            try {
+                const data = await fetch(url);
+                const res = await data.json();
+        
+                for (let i = 0; i < res.length; i++) {
+                    tbody_user.innerHTML += `
+                        <tr>
+                            <td>${i + 1}</td>
+                            <td>${res[i].fullname}</td>
+                            <td>${res[i].age}</td>
+                            <td>${res[i].role}</td>
+                            <td>${res[i].username}</td>
+                            <td>
+                                <span onclick="window.location.href='show.html?id=${
+                                    res[i].id
+                                }'">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </span>
+                                <span onclick="handleDeleteAPIUser('${urlUsers}', ${
+                                    res[i].id
+                                })">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </span>
+                            </td>
+                        </tr>
+                    `;
+                }
+            } catch (error) {
+                console.error(error);
+            } finally {
+                console.log("Đã xong");
+            }
+        }
+        
+        getAllUsers(urlUsers);
+        
+        async function handleDeleteAPIUser(url, id) {
+            const check = confirm("Bạn muốn xóa bản ghi không.");
+        
+            if (check) {
+                try {
+                    const response = await fetch(url + "/" + id, {
+                        method: "DELETE",
+                    });
+        
+                    if (!response.ok) {
+                        alert("Xóa không thành công");
+                    }
+        
+                    alert("Xóa thành công");
+                    return response.json();
+                } catch (error) {
+                    console.error(error);
+                } finally {
+                    window.location.href = "index.html";
+                }
+            }
+        }</script>
+</body>
+</html>
