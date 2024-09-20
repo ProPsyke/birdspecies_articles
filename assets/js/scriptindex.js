@@ -30,24 +30,28 @@ async function handleGetAPIUser(url) {
         for (let i = 0; i < filteredItems.length; i++) {
           itemsHtml += `
             <div class="di3-1">
-              <img src="./assets/images.png" alt="" width="100px" />
-              <div class="di3-1-1">
-                <h3>${filteredItems[i].title}</h3>
-                <p>${filteredItems[i].des}</p>
-              </div>
+              <a href="./code/Read.html?id=${filteredItems[i].id}">
+                <img src="./assets/img/images.jpg" alt="" width="100%" />
+                <div class="di3-1-1">
+                  <h3>${filteredItems[i].title}</h3>
+                  <p>${filteredItems[i].des}</p>
+                </div>
+              </a>
             </div>
           `;
         }
       } else {
         for (let i = 0; i < 5; i++) {
           itemsHtml += `
-            <div class="di3-1">
-              <img src="./assets/images.png" alt="" width="100px" />
+          <div class="di3-1">
+            <a href="./code/Read.html">
+              <img src="./assets/img/images.jpg" alt="" width="100px" />
               <div class="di3-1-1">
                 <h3>${filteredItems[i].title}</h3>
-                <p>${filteredItems[i].description}</p>
+                <p>${filteredItems[i].des}</p>
               </div>
-            </div>
+            </a>
+          </div>
           `;
         }
       }
@@ -78,18 +82,6 @@ async function handleGetAPIUser(url) {
     console.log("Đã hoàn thành");
   }
 }
-console.log(localStorage.getItem('e'))
-const b = document.querySelectorAll('di3-1')
-console.log(b)
-for(let k =0; k< 3; k++){
-  b[k].addEventListener(
-    'click', function (r){
-      console.log('what')
-      console.log(r.target.value)
-    }
-  )
-}
-
 
 handleGetAPIUser(article_api)
 
@@ -108,7 +100,7 @@ else{
 }
 
 function add(){
-  window.location.href='http://127.0.0.1:5500/code/create.html'
+  window.location.href='code/create.html'
 }
 
 function more(){
