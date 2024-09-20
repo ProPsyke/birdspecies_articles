@@ -16,6 +16,7 @@ body{
 }
 .di1-1 a{
     margin-right: 20px;
+    cursor: pointer;
 }
 .di2{
     width: 1150px;
@@ -83,6 +84,7 @@ body{
     margin-top: 50px;
 }
 select{
+    cursor: pointer;
     font-size: 16px;
     appearance: none;
     border: none;
@@ -97,6 +99,7 @@ option{
     color: black;
 }
 .add{
+    cursor: pointer;
     border-radius: 50px;
     width: 50px;
     height: 50px;

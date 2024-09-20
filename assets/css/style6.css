@@ -2,7 +2,6 @@ body{
     width: 1150px;
     margin-top: 0;
     margin-left: 0;
-    text-align: center;
 }
 .di1{
     width: 1150px;
@@ -36,7 +35,7 @@ body{
     border: 1px solid black;
 }
 .h2{
-    margin-right: 950px;
+    padding-left: 50px;
 }
 .p1{
     width: 1150px;
@@ -44,6 +43,7 @@ body{
     padding-right: 50px;
     margin-top: 110px;
     font-size: 50px;
+    text-align: center;
 }
 .p2{
     width: 1150px;
@@ -53,10 +53,14 @@ body{
     font-size: 20px;
 }
 select{
+    cursor: pointer;
     font-size: 16px;
     appearance: none;
     border: none;
     margin-right: 10px;
     font-family: 'Times New Roman', Times, serif;
     padding: 2px;
+}
+a{
+    cursor: pointer;
 }

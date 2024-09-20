@@ -16,6 +16,7 @@ body {
 }
 .di1-1 a {
   margin-right: 20px;
+  cursor: pointer;
 }
 select {
   font-size: 16px;

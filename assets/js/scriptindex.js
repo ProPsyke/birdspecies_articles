@@ -31,7 +31,7 @@ async function handleGetAPIUser(url) {
           itemsHtml += `
             <div class="di3-1">
               <a href="./code/Read.html?id=${filteredItems[i].id}">
-                <img src="./assets/img/images.jpg" alt="" width="100%" />
+                <img src="" alt="" width="100%" />
                 <div class="di3-1-1">
                   <h3>${filteredItems[i].title}</h3>
                   <p>${filteredItems[i].des}</p>
@@ -45,7 +45,7 @@ async function handleGetAPIUser(url) {
           itemsHtml += `
           <div class="di3-1">
             <a href="./code/Read.html">
-              <img src="./assets/img/images.jpg" alt="" width="100px" />
+              <img src="" alt="" width="100px" />
               <div class="di3-1-1">
                 <h3>${filteredItems[i].title}</h3>
                 <p>${filteredItems[i].des}</p>
@@ -61,7 +61,7 @@ async function handleGetAPIUser(url) {
         <div class="content">
           <div class="seemore">
             <h3 class="topic">${uniqueTags[j]}</h3>
-            <a onclick="more()">see more in detail >></a>
+            <a href='./code/more.html?tag=${uniqueTags[j]}'>see more in detail >></a>
           </div>
           <div class="di3" id="di31">
             ${itemsHtml}
@@ -105,4 +105,23 @@ function add(){
 
 function more(){
   localStorage.setItem('ida',)
+}
+
+function tips(){
+  window.location.href='http://127.0.0.1:5500/code/Tips.html'
+}
+function login(){
+  window.location.href='http://127.0.0.1:5500/code/SignIn.html'
+}
+function signup(){
+  window.location.href='http://127.0.0.1:5500/code/SignUp.html'
+}
+function qaa(){
+  window.location.href='http://127.0.0.1:5500/code/Q&A.html'
+}
+function main(){
+  window.location.href='http://127.0.0.1:5500/index.html'
+}
+function u(){
+  window.location.href='http://127.0.0.1:5500/code/user.html'
 }
