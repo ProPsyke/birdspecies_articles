@@ -8,6 +8,9 @@ Array.from(myLabels).forEach(label =>
         }); 
     }); 
 
+    function add(){
+      window.location.href='http://127.0.0.1:5500/code/create.html'
+    }
     function tips(){
         window.location.href='http://127.0.0.1:5500/code/Tips.html'
       }
@@ -22,4 +25,16 @@ Array.from(myLabels).forEach(label =>
       }
       function main(){
         window.location.href='http://127.0.0.1:5500/index.html'
+      }
+      const local = localStorage.getItem("id");
+      console.log(local);
+    
+      if (local == null) {
+        document.getElementById("u").style.display = "none";
+        document.getElementById("si").style.display = "inline-block";
+        document.getElementById("lo").style.display = "inline-block";
+      } if(local !=null) {
+        document.getElementById("si").style.display = "none";
+        document.getElementById("lo").style.display = "none";
+        document.getElementById("u").style.display = "inline-block";
       }

@@ -15,6 +15,10 @@ body{
 }
 .di1-1 a{
     margin-right: 20px;
+    cursor: pointer;
+}
+h1{
+    cursor: pointer;
 }
 .my{
     left: 50px;
@@ -65,14 +69,33 @@ body{
     height: 41vh;
     text-align: justify;
 }
+.follow{
+    background-color: white;
+    height: 30px;
+    width: 90px;
+    margin-left: 300px;
+}
 .text p{
     font-size: 15px;
 }
 select{
+    cursor: pointer;
     font-size: 16px;
     appearance: none;
     border: none;
     margin-right: 10px;
     font-family: 'Times New Roman', Times, serif;
     padding: 2px;
+}
+.add{
+    cursor: pointer;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: fixed;
+    top: 500px;
+    left: 1170px;
+    background-color: rgb(67, 63, 63);
+    color: white;
 }

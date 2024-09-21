@@ -63,4 +63,9 @@ select{
 }
 a{
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    cursor: pointer;
 }

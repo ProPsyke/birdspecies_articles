@@ -1,3 +1,4 @@
+<!-- đã xong -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +22,7 @@
         <a onclick="tips()">Tips</a>
         <a onclick="login()" id="lo">Log In</a>
         <a onclick="signup()" id="si">Sign Up</a>
-        <a href="" id="u" onclick="u()">User</a>
+        <a id="u" onclick="u()">User</a>
         <a onclick="qaa()">Q&A</a>
       </div>
       <div><h1 onclick="main()">Bird Species</h1></div>
@@ -31,10 +32,8 @@
       <img src="" alt="" class="img2" />
     </div>
     <div class="h2">
-      <a>By</a>
-      <a class="tacgia"></a>
+      <a id="tacgia"></a>
       <a style="padding-left: 10px" class="dtae"></a>
-      <a></a>
     </div>
     <div>
       <p class="p1"></p>
@@ -42,7 +41,9 @@
     </div>
 
     <script>
-
+      function u(){
+  window.location.href='http://127.0.0.1:5500/code/user.html'
+}
       function tips(){
         window.location.href='http://127.0.0.1:5500/code/Tips.html'
       }
@@ -93,7 +94,7 @@
           if (!response.ok) throw new Error("Network response was not ok");
           const user = await response.json();
 
-          document.querySelector(".tacgia").innerHTML = user.fullName;
+          document.getElementById("tacgia").innerHTML = `<a href="author.html?id=${user.id}">By ${user.fullName}</a>`;
 
         } catch (error) {
           console.error("Error fetching user data:", error);

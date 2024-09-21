@@ -109,3 +109,30 @@ a{
 .art p{
     font-size: 20px;
 }
+button{
+    cursor: pointer;
+}
+.what{
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    width: 1120px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px solid;
+    height: 50vh;
+}
+.add{
+    cursor: pointer;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: fixed;
+    top: 500px;
+    left: 1170px;
+    background-color: rgb(67, 63, 63);
+    color: white;
+}

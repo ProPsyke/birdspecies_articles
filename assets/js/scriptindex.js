@@ -88,23 +88,18 @@ handleGetAPIUser(article_api)
 
 
 
-if(local == null){
-  document.getElementById('u').style.display='none'
-  document.getElementById('si').style.display='inline-block'
-  document.getElementById('lo').style.display='inline-block'
-}
-else{
-  document.getElementById('si').style.display='none'
-  document.getElementById('lo').style.display='none'
-  document.getElementById('u').style.display='inline-block'
+if (local == null) {
+  document.getElementById("u").style.display = "none";
+  document.getElementById("si").style.display = "inline-block";
+  document.getElementById("lo").style.display = "inline-block";
+} else {
+  document.getElementById("si").style.display = "none";
+  document.getElementById("lo").style.display = "none";
+  document.getElementById("u").style.display = "inline-block";
 }
 
 function add(){
   window.location.href='code/create.html'
-}
-
-function more(){
-  localStorage.setItem('ida',)
 }
 
 function tips(){

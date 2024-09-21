@@ -1,17 +1,14 @@
+<!-- đã xong -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writer</title>
+    <title>Write_Your_Article</title>
     <link rel="stylesheet" href="/assets/css/style8.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="di1">
@@ -25,19 +22,20 @@
           <option value="">Africa</option>
           <option value="">Antartica</option>
         </select>
-        <a>Tips</a>
-        <a>Log In</a>
-        <a>Sign Up</a>
-        <a>Q&A</a>
+        <a onclick="tips()">Tips</a>
+        <a onclick="login()" id="lo">Log In</a>
+        <a onclick="signup()" id="si">Sign Up</a>
+        <a id="u" onclick="u()">User</a>
+        <a onclick="qaa()">Q&A</a>
       </div>
-      <div><h1>Bird Species</h1></div>
+      <div onclick="main()"><h1>Bird Species</h1></div>
     </div>
     <div class="my">
       <img src="./assets/" alt="" class="img2" />
       <div class="box">
-        <p>LOREM ISPUM</p>
+        <p id="author">LOREM ISPUM</p>
         <h3>I am the author, you have known everything about me!</h3>
-        <button>Follow Me-<i class="fa-regular fa-heart"></i></button>
+        <button class="follow">Follow Me</button>
       </div>
     </div>
     <div class="card">
@@ -70,5 +68,12 @@
         dictum ridiculus integer.
       </p>
     </div>
+    <div>
+      <button class="add" onclick="add()">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+    <script src="/assets/js/metqua.js">
+    </script>
   </body>
 </html>

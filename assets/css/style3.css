@@ -105,6 +105,7 @@ a {
 #err{
   position: absolute;
   display: none;
-  left: 500px;
+  left: 250px;
   color: red;
+  top: 500px;
 }

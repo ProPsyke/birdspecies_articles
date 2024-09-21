@@ -61,7 +61,6 @@ fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đ
   })
 
   function logout(){
-
     localStorage.clear()
     window.location.href='http://127.0.0.1:5500/index.html'
   }
@@ -80,6 +79,9 @@ fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đ
   }
   function main(){
     window.location.href='http://127.0.0.1:5500/index.html'
+  }
+  function add(){
+    window.location.href='create.html'
   }
   
 

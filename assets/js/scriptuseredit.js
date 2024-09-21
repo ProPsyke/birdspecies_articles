@@ -38,18 +38,21 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const email = document.getElementById('email').value;
     const checkPermission =th;
     const dateOfBirth = fo;
+    const password =localStorage.getItem('password')
 
     localStorage.setItem('user',fullName)
     localStorage.setItem('email',email)
     localStorage.setItem('permission',checkPermission)
     localStorage.setItem('date',dateOfBirth)
+    localStorage.setItem('password',password)
 
     // Tạo đối tượng người dùng từ các giá trị
     const user = {
         fullName,
         email,
         checkPermission,
-        dateOfBirth
+        dateOfBirth,
+        password
     };
 
     handleUpdateAPIUser(urlUser, userId, user);

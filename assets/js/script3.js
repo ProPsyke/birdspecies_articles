@@ -22,7 +22,7 @@ function submit(){
 var nam = document.getElementById('name').value.length
 var em = document.getElementById('email').value.length
   if(nam==0){
-    er.innerHTML='Please enter name'
+    er.innerHTML='Please enter Username'
     er.style.display='block'
   }
   if(em==0){
@@ -30,21 +30,21 @@ var em = document.getElementById('email').value.length
     er.style.display='block'
   }
   if(pas==0){
-    er.innerHTML='Please enter pass'
+    er.innerHTML='Please enter password'
     er.style.display='block'
     console.log(pas)
   }
   if(nam>0 && nam<8){
-    er.innerHTML='name 8 characters'
+    er.innerHTML='Name must contain 8 characters'
     er.style.display='block'
   }
   if(em>0 && em<8){
-    er.innerHTML='email 8 characters'
+    er.innerHTML='Email must contain 8 characters'
     er.style.display='block'
     
   }
   if(pas>0 && pas<8){
-    er.innerHTML='pass 8 characters'
+    er.innerHTML='Password must contain 8 characters'
     er.style.display='block'
     
   }
@@ -53,7 +53,6 @@ var em = document.getElementById('email').value.length
     const newTask1 ={
       fullName : document.getElementById('name').value,
       email : document.getElementById('email').value,
-      dateOfBirth : '0',
       checkPermission : 'Người thường',
       password : document.getElementById('pass').value,
       dateOfBirth : today
