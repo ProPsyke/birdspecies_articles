@@ -1,13 +1,12 @@
 body{
-    width: 1150px;
     margin-top: 0;
     margin-left: 0;
-
+    width: 1150px;
 }
 .di1{
     width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
@@ -16,6 +15,24 @@ body{
 }
 .di1-1 a{
     margin-right: 20px;
+}
+.di3{
+    display: flex;
+    justify-content: space-between;
+}
+.di3-1-{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 210px;
+    text-align: center;
+    margin-top: 10px;
+}
+.di3-1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 210px;
+    text-align: center;
+    margin-top: 10px;
 }
 a{
     text-decoration: none;
@@ -35,15 +52,17 @@ select{
     background-color: white;
     padding: 2px;
     color: rgba(23, 24, 27, 0.817);
+    cursor: pointer;
 }
 .ba{
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 25px;
-    width: 1150px;
+    width: 1130px;
     padding: 15px;
     border: 1px solid black;
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
+
     margin-top: 50px;
 }
 h2{
@@ -53,5 +72,40 @@ h2{
     padding-left: 10px;
 }
 p{
+    margin-top: 2px;
+    margin-bottom: 5px;
     margin-left: 10px;
+}
+.e{
+    top: 270px;
+    position: absolute;
+    width: 200px;
+    display: flex;
+    margin-left: 700px;
+}
+.ed{
+    margin-left: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid;
+    font-size: 15px;
+}
+input{
+    margin-left: 10px;
+}
+h1{
+    cursor: pointer;
+    margin: 0;
+}
+a{
+    cursor: pointer;
+}
+.art{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.art p{
+    font-size: 20px;
 }

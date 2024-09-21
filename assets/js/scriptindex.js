@@ -1,3 +1,4 @@
+const local = localStorage.getItem('id')
 const article_api = "https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article"
 
 const render_blog = document.querySelector(".render_blog")
@@ -85,8 +86,7 @@ async function handleGetAPIUser(url) {
 
 handleGetAPIUser(article_api)
 
-const local = localStorage.getItem('id')
-console.log(local)
+
 
 if(local == null){
   document.getElementById('u').style.display='none'

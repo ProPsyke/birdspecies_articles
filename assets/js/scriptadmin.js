@@ -38,7 +38,7 @@ const handleDelete = async(id) =>{
   const checkdelete = confirm('bạn có muốn xoá tài khoản người dùng này?')
   if(checkdelete){
       const response = await fetch(
-          'https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article/' + id, 
+          'https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/users/' + id, 
          { 
           method: 'DELETE'
          }

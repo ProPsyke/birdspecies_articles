@@ -48,10 +48,8 @@ var em = document.getElementById('email').value.length
     er.style.display='block'
     
   }
-  if(pas >=8 && em >= 8 && nam>= 8){
-    document.getElementById('name').value=''
-    document.getElementById('pass').value=''
-    document.getElementById('email').value=''
+  if((pas >=8) && (em >= 8) && (nam>= 8)){
+   
     const newTask1 ={
       fullName : document.getElementById('name').value,
       email : document.getElementById('email').value,
@@ -60,6 +58,9 @@ var em = document.getElementById('email').value.length
       password : document.getElementById('pass').value,
       dateOfBirth : today
     }
+    document.getElementById('name').value=''
+    document.getElementById('pass').value=''
+    document.getElementById('email').value=''
     console.log(newTask1)
       
       fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/users', {
@@ -68,7 +69,7 @@ var em = document.getElementById('email').value.length
         body: JSON.stringify(newTask1)
       }).then(res => {
         if (res.ok) {
-          return res.json(window.location.href='http://127.0.0.1:5500/code/SignIn.html'); 
+          window.location.href='http://127.0.0.1:5500/code/SignIn.html'
         }
         // handle error
       }).then(newTask1 => {

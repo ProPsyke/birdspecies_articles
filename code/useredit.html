@@ -18,25 +18,33 @@
             <option value="">Africa</option>
             <option value="">Antartica</option>
           </select>
-          <a href="/code/Tips.html">Tips</a>
-          <a href="" id="u" onclick="u()">User</a>
-          <a href="/code/Q&A.html">Q&A</a>
+          <a onclick="tips()">Tips</a>
+          <a id="u" onclick="u()">User</a>
+          <a onclick="qaa()">Q&A</a>
         </div>
         <div>
           <h1 onclick="main()">Bird Species</h1>
         </div>
       </div>
-
-
       <div class="ba"> 
         <img src="./assets/img/images.jpg" alt="" width="200px" height="200px">
         <div id="ab">
+          <h2>About me!</h2>
+            <div>
+                <form id="form">
+                  <div><p>User Name</p><input id='username'></input></div>
+                  <div><p>Email</p><input id='email'></input></div>
+                    
+                    <p id="per"></p>
+                    <p id="date"></p> 
+                      <button class='ed' id="ed" onclick="ed()" type="submit">Done</button>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="art">
-        <p>Your Article</p>
-        <div id="article"></div>
+    <div>
+        <div>Your Article</div>
     </div>
-    <script src="/assets/js/scriptuser.js"></script>
+      <script src="/assets/js/scriptuseredit.js"></script>
 </body>
 </html>
