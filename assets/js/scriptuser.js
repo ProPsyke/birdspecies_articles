@@ -42,15 +42,15 @@ fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đ
       console.log(i)
         if(tasks[i].idUser == si){
             article.innerHTML+=`
-          <div class="di3-1">
-            <a href="/code/Read.html?id=${tasks[i].id}">
-              <img src="" alt="" width="100px" />
-              <div class="di3-1-1">
-                <h3>${tasks[i].title}</h3>
-                <p>${tasks[i].des}</p>
-              </div>
+         <div class="di3-1">
+            <a href='Read.html?id=${tasks[i].id}'>
+            <img src="./assets/images.png" alt="" width="100px" />
+            <div class="di3-1-1">
+            <h3>${tasks[i].title}</h3>
+            <p>${tasks[i].des}</p>
+            </div>
             </a>
-          </div>
+            </div>
           `
         }
         else{
