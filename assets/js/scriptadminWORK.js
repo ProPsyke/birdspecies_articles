@@ -120,6 +120,7 @@ function old(){
       des : document.getElementById('description').value,
       content : document.getElementById('more').value,
       tag : document.getElementById('tags').value,
+      idUser: '1'
     }
     fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', {
       method: 'POST',

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style6.css" />
+  </head>
+  <body>
+    <div class="di1">
+      <div class="di1-1">
+        <select name="" id="">
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="The Arctic">The Arctic</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Asia">Asia</option>
+          <option value="Africa">Africa</option>
+          <option value="Antartica">Antartica</option>
+        </select>
+        <a onclick="tips()">Tips</a>
+        <a onclick="login()" id="lo">Log In</a>
+        <a onclick="signup()" id="si">Sign Up</a>
+        <a id="u" onclick="u()">User</a>
+        <a onclick="qaa()">Q&A</a>
+      </div>
+      <div><h1 onclick="main()">Bird Species</h1></div>
+    </div>
+    <div>
+      <img src="" alt="" class="img1" />
+      <img src="" alt="" class="img2" />
+    </div>
+    <div class="h2">
+      <a id="tacgia">By Author.1</a>
+      <a style="padding-left: 10px" class="dtae">Created at 9-8-2008</a>
+    </div>
+    <div>
+      <p class="p1">Tittle Here</p>
+      <p class="p2">
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Maecenas sapien non
+        aliquet, habitant ad lacinia dui ut. Netus imperdiet viverra scelerisque
+        arcu congue conubia penatibus facilisi. Integer venenatis class risus;
+        congue maecenas ornare odio? Vivamus himenaeos maecenas fames ornare per
+        odio; quis fermentum inceptos. Ex consequat bibendum blandit aliquet ac
+        aliquam. Ad odio in vulputate eget sollicitudin. Elit enim odio morbi
+        scelerisque nunc penatibus fusce. Conubia urna porttitor nec magnis arcu
+        fringilla enim tristique vestibulum. Vel pellentesque pellentesque ex
+        proin quisque maximus donec aptent magna. Placerat netus natoque nam
+        neque vehicula etiam. Est purus litora, dictum fermentum ante lacinia
+        neque. Ac arcu ipsum viverra tempor justo quam litora consequat. Euismod
+        euismod sem lobortis ex tincidunt vehicula. Odio tincidunt eros, cursus
+        montes euismod dolor. Amet aliquet proin malesuada curabitur interdum
+        nam. Erat cursus rutrum penatibus rhoncus; donec auctor inceptos primis
+        sociosqu? Euismod maecenas litora aliquet; fringilla mauris sed. Quis
+        ipsum magna hendrerit eros velit vehicula. Faucibus amet luctus nulla
+        himenaeos orci morbi molestie non. Leo ultrices etiam vulputate aliquam
+        at facilisis consectetur cubilia. Ridiculus condimentum luctus
+        sollicitudin eget viverra odio cursus. Duis enim ultrices suscipit a
+        consectetur lorem. Tincidunt erat rhoncus iaculis sapien vehicula ex
+        diam. Suscipit proin proin felis, rutrum praesent lacus quisque est.
+        Vitae dis viverra vulputate, placerat efficitur bibendum gravida
+        rhoncus. Ad amet diam sodales libero nisi. Non suscipit potenti faucibus
+        maecenas proin imperdiet in diam sagittis. Tristique odio iaculis dolor
+        morbi condimentum porta fames nullam. Tortor non id accumsan arcu quam
+        phasellus. Scelerisque et egestas euismod vivamus parturient volutpat;
+        ut ultrices tellus. Vivamus a fusce aliquet lectus habitant turpis sem.
+        Potenti mi sit a metus dignissim ut duis scelerisque. Hac pellentesque
+        primis magna cursus; eleifend elementum fringilla. Egestas purus natoque
+        vehicula porta; in magna orci. Phasellus urna pharetra vel maecenas non
+        aliquet venenatis. Curae nunc eu vestibulum semper dignissim porta odio?
+      </p>
+    </div>
+    <script> 
+          function u(){
+  window.location.href='http://127.0.0.1:5500/code/user.html'
+}
+      function tips(){
+        window.location.href='http://127.0.0.1:5500/code/Tips.html'
+      }
+      function login(){
+        window.location.href='http://127.0.0.1:5500/code/SignIn.html'
+      }
+      function signup(){
+        window.location.href='http://127.0.0.1:5500/code/SignUp.html'
+      }
+      function qaa(){
+        window.location.href='http://127.0.0.1:5500/code/Q&A.html'
+      }
+      function main(){
+        window.location.href='http://127.0.0.1:5500/index.html'
+      }
+    const local = localStorage.getItem("id");
+        console.log(local);
+  
+        if (local == null) {
+          document.getElementById("u").style.display = "none";
+          document.getElementById("si").style.display = "inline-block";
+          document.getElementById("lo").style.display = "inline-block";
+        } else {
+          document.getElementById("si").style.display = "none";
+          document.getElementById("lo").style.display = "none";
+          document.getElementById("u").style.display = "inline-block";
+        }
+        </script>
+  </body>
+</html>

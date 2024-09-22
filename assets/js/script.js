@@ -8,6 +8,9 @@ Array.from(myLabels).forEach(label =>
         }); 
     }); 
 
+    function u(){
+      window.location.href='http://127.0.0.1:5500/code/user.html'
+    }
     function add(){
       window.location.href='http://127.0.0.1:5500/code/create.html'
     }

@@ -39,8 +39,9 @@ fetch('https://jsa37-api-bca8a1a0f23b.herokuapp.com/api/baotran/article', { //đ
     // handle error
   }).then((tasks) => {
     for(i=0; i<tasks.length; i++){
+      console.log(i)
         if(tasks[i].idUser == si){
-            article.innerHTML=`
+            article.innerHTML+=`
           <div class="di3-1">
             <a href="/code/Read.html?id=${tasks[i].id}">
               <img src="" alt="" width="100px" />
