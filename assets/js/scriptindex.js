@@ -45,7 +45,7 @@ async function handleGetAPIUser(url) {
         for (let i = 0; i < 5; i++) {
           itemsHtml += `
           <div class="di3-1">
-            <a href="./code/Read.html">
+            <a href="./code/Read.html?id=${filteredItems[i].id}">
               <img src="" alt="" width="100px" />
               <div class="di3-1-1">
                 <h3>${filteredItems[i].title}</h3>
